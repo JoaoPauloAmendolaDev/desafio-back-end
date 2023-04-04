@@ -2,14 +2,14 @@ import "reflect-metadata"
 import "express-async-errors"
 import express, {Express} from "express"
 import cors from "cors"
-import { connectDb, disconnectDB, loadEnv } from "./config"
+import { connectDb, disconnectDB, loadEnv } from "@/config"
 
 loadEnv()
 
 const app = express()
 
 app
-   .use(cors)
+   .use(cors())
    .get("/health", (_req, res) => res.send("OK!"))
 
 

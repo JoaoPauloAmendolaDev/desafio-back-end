@@ -19,18 +19,20 @@
   },
   "author": "João Paulo Silva Amendola",
   "license": "ISC",
-  "prisma" : {
-    "seed" : "npm run dev:load-envs -- ts-node prisma/seed.ts"
+  "prisma": {
+    "seed": "npm run dev:load-envs -- ts-node prisma/seed.ts"
   },
   "devDependencies": {
     "@prisma/client": "^4.12.0",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/node": "^18.15.11",
+    "dotenv-cli": "^7.1.0",
     "express-async-errors": "^3.1.1",
     "typescript": "^5.0.3"
   },
   "dependencies": {
+    "@types/dotenv": "^8.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "dotenv-expand": "^10.0.0",
